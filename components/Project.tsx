@@ -2,26 +2,37 @@ import Image from 'next/image'
 import Parallax from './Parallax'
 
 
-function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription,}:{ProjectImg: any, ProjectTitle: string, ProjectLink: string, ProjectDescription: string}) {
+function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription, ProjectId}:{ProjectImg: any, ProjectId: number, ProjectTitle: string, ProjectLink: string, ProjectDescription: string}) {
   return (
-    <Parallax>
-    <div className=" flex-col gap-4flex">
+
+    <Parallax key={ProjectId}>
+    <div className="wrapper bg-gray-400 antialiased text-gray-900">
+    <div  onClick={() => window.open(ProjectLink, '_blank')}>
         
-        <div className='h-72 w-full relative'>
+    </div>
            <Image src={ProjectImg} 
                 objectFit='cover'
                 layout='fill'
-                className='rounded-t-md'
-                alt={ProjectTitle}/>
-            <div className="p-2 flex flex-col gap-1">
-               
-            <p className='text-2xl font-semibold' >{ProjectTitle}</p>
-             <p className='text-secondary'>{ProjectDescription}</p>
-            </div>
-        </div>
+                alt={ProjectTitle}
+              className="w-full object-cover object-center rounded-lg shadow-md"
+              />    
+        
+     <div className="relative px-4 -mt-16  ">
+       <div className="bg-white p-6 rounded-lg shadow-lg">
+
+        
+        <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">{ProjectTitle}</h4>
+     
+      <div className="mt-1">
+      {ProjectDescription}
+      </div>
+      </div>
+     </div>
+      
+
+
     </div>
     </Parallax>
   )
 }
-
 export default Project;
