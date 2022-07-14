@@ -3,13 +3,12 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 
 import Project from "../components/Project";
-import Container from "../components/Container";
+
 ;
 
 export default function Home({}) {
   return (
 
-    <Container>
     <div className="grid h-screen text-left">
     <Head>
         <title>Holt</title>
@@ -27,10 +26,45 @@ export default function Home({}) {
     <div className="grid grid-cols-1 gap-4 place-items-center">
 
         <Project ProjectTitle='test' ProjectId={1} ProjectLink='https://example.com/' ProjectImg='/mac.png' ProjectDescription="A cool project to learn 👨‍🎓"/>
-
+        <Project 
+        ProjectImg='/mac.png'
+          ProjectId={2}
+          ProjectLink='https://openbook-solana.vercel.app'
+          ProjectTitle='📖 Open Book'
+          ProjectDescription='My first web3 project! Everyone can write something in the web3 book✨'
+        />
+        <Project 
+          ProjectId={3}
+          ProjectImg='/coingecko-cli.png'
+          ProjectLink='https://coingecko-cli.vercel.app/'
+          ProjectTitle='️💻 CoinGecko-CLI'
+          ProjectDescription='Query everything from coingecko right in your command line'
+        />
+        <Project 
+        ProjectImg='/mac.png'
+          ProjectId={4}
+          ProjectLink='https://randomdoggo.vercel.app/'
+          ProjectTitle='️🐶 Random Doggo'
+          ProjectDescription='Display a random image of a dog'
+        />
+           <Project 
+           ProjectImg='/mac.png'
+          ProjectId={5}
+          ProjectLink='https://kenmerkende-aspecten.vercel.app/'
+          ProjectTitle='️🗒️ Leer de kenmerkende aspecten'
+          ProjectDescription='(Dutch) Een app die ik gemaakt heb om de kenmerkende aspecten te leren voor mijn geschiedenis examen.'
+        />
+          <Project
+          ProjectImg='/mac.png'
+            ProjectId={6}
+            ProjectLink='https://self-driving-js.vercel.app/'
+            ProjectTitle='🚙 Self driving car'
+            ProjectDescription='A self driving car simulation made with help of a youtube course'
+          />
         </div>
     </div>
-    </Container>
+  
+
 
   );
 }
