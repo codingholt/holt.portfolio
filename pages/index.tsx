@@ -27,7 +27,7 @@ export default function Home({}) {
 
         <Project ProjectTitle='test' ProjectId={1} ProjectLink='https://example.com/' ProjectImg='/mac.png' ProjectDescription="A cool project to learn 👨‍🎓"/>
         <Project 
-        ProjectImg='/mac.png'
+        ProjectImg='/open_book.png'
           ProjectId={2}
           ProjectLink='https://openbook-solana.vercel.app'
           ProjectTitle='📖 Open Book'
@@ -41,25 +41,25 @@ export default function Home({}) {
           ProjectDescription='Query everything from coingecko right in your command line'
         />
         <Project 
-        ProjectImg='/mac.png'
+        ProjectImg='/doggo.png'
           ProjectId={4}
           ProjectLink='https://randomdoggo.vercel.app/'
           ProjectTitle='️🐶 Random Doggo'
           ProjectDescription='Display a random image of a dog'
         />
            <Project 
-           ProjectImg='/mac.png'
+           ProjectImg='/kenmerkde_aspecten.png'
           ProjectId={5}
           ProjectLink='https://kenmerkende-aspecten.vercel.app/'
           ProjectTitle='️🗒️ Leer de kenmerkende aspecten'
           ProjectDescription='(Dutch) Een app die ik gemaakt heb om de kenmerkende aspecten te leren voor mijn geschiedenis examen.'
         />
           <Project
-          ProjectImg='/mac.png'
+          ProjectImg='/self-driving-js.jpeg'
             ProjectId={6}
             ProjectLink='https://self-driving-js.vercel.app/'
             ProjectTitle='🚙 Self driving car'
-            ProjectDescription='A self driving car simulation made with help of a youtube course'
+            ProjectDescription={<>A self driving car simulation made with the wonderfull <a className='hover:underline' href='https://www.youtube.com/watch?v=NkI9ia2cLhc&list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY'>youtube course from Radu</a></>}
           />
         </div>
     </div>

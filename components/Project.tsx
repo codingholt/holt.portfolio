@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Parallax from './Parallax'
 
 
-function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription, ProjectId}:{ProjectImg: any, ProjectId: number, ProjectTitle: string, ProjectLink: string, ProjectDescription: string}) {
+function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription, ProjectId}:{ProjectTitle: string, ProjectImg: any, ProjectLink: string, ProjectDescription: any, ProjectId: number}) {
   return (
 
     <Parallax key={ProjectId}>
@@ -43,7 +43,7 @@ function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription, Pro
                 layout='intrinsic'
                 width={1000}
                 height={500}
-                alt={'Cover Image' + ProjectTitle}
+                alt={ProjectTitle}
               />    
     </a>
     <div className="p-5">
