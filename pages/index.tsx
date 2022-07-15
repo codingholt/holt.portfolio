@@ -8,7 +8,7 @@ import Project from "../components/Project";
 
 export default function Home({}) {
   return (
-
+    <div className="container mx-auto px-20 m-20">
     <div className="grid h-screen text-left">
     <Head>
         <title>Holt</title>
@@ -18,12 +18,15 @@ export default function Home({}) {
     
     
 
-      <div className="m-0	p-0">
+    <div className=" grid grid-cols-2 gap-5 ">
+
+    <div className="col-start-1">
       <h1 className="text-2xl font-semi-bold ">Holt.</h1>
+
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!
-      </div>
+   </div>
     
-    <div className="grid grid-cols-1 gap-4 place-items-center">
+    <div className="col-start-2 items-stretch content-center justify-self-center">
 
         <Project ProjectTitle='test' ProjectId={1} ProjectLink='https://example.com/' ProjectImg='/mac.png' ProjectDescription="A cool project to learn 👨‍🎓"/>
         <Project 
@@ -62,9 +65,10 @@ export default function Home({}) {
             ProjectDescription={<>A self driving car simulation made with the wonderfull <a className='hover:underline' href='https://www.youtube.com/watch?v=NkI9ia2cLhc&list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY'>youtube course from Radu</a></>}
           />
         </div>
-    </div>
-  
 
+    </div>
+    </div>
+    </div>
 
   );
 }
