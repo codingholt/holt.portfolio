@@ -8,7 +8,7 @@ import Project from "../components/Project";
 
 export default function Home({}) {
   return (
-    <div className="container mx-auto m-20 grid h-screen text-left">
+    <div className="container mx-auto m-20 text-left">
 
     <Head>
         <title>Holt</title>
@@ -18,15 +18,15 @@ export default function Home({}) {
     
     
 
-    <div className=" grid grid-cols-2 gap-5 overflow-hidden">
+    <div className="grid grid-cols-2 gap-5 static">
 
-    <div className="col-start-1">
+    <div className="fixed max-w-prose col-start-1 items-stretch content-center justify-self-left">
       <h1 className="text-2xl font-semi-bold ">Holt.</h1>
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
    </div>
     
-    <div className="col-start-2 items-stretch content-center justify-self-center overflow-y-scroll overflow-hidden">
+    <div className="col-start-2 items-stretch content-center justify-self-center">
 
         <Project 
         ProjectTitle='test' 
