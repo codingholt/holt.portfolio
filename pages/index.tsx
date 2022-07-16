@@ -3,12 +3,13 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 
 import Project from "../components/Project";
+import Container from "../components/Container";
 
 ;
 
 export default function Home({}) {
   return (
-    <div className="container mx-auto m-20 text-left">
+    <Container>
 
     <Head>
         <title>Holt</title>
@@ -26,7 +27,7 @@ export default function Home({}) {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
    </div>
     
-    <div className="col-start-2 items-stretch content-center justify-self-center">
+    <div className="col-start-2 items-stretch content-left justify-self-center">
 
         <Project 
         ProjectTitle='test' 
@@ -72,7 +73,7 @@ export default function Home({}) {
         </div>
 
     </div>
-    </div>
+    </Container>
 
 
   );

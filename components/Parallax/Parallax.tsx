@@ -69,7 +69,6 @@ export default function Parallax({
     <LazyMotion features={domAnimation}>
       {' '}
       <m.div
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ref={ref as any}
         initial={{ y: 0 }}
         style={{ y, opacity }}
