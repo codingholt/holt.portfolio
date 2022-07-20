@@ -9,7 +9,6 @@ interface IParallaxProps {
   easing?: Array<number>
   triggerPoint?: number
   fadeOut?: boolean
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any
 }
 
@@ -53,7 +52,7 @@ export default function Parallax({
 
   const yRange = [transformInitialValue, transformFinalValue]
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const y = useTransform(scrollY, yRange, [0, -yOffset], easing as any)
 
   const opacityInitialValue = fadeOut ? 0 : 1

@@ -18,7 +18,7 @@ function Container({children, displayFooter} : {children: React.ReactNode, displ
     ring-1 ring-black/10 dark:ring-gray-700/50">
 
     
-        <div className="container mx-auto m-20 text-left">
+        <div className="container mx-auto m-20 text-left p-20">
         
             {children}
        
