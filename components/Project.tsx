@@ -36,7 +36,7 @@ function Project({ProjectTitle, ProjectImg, ProjectLink, ProjectDescription, Pro
  */}
 
 
-<div onClick={() => window.open(ProjectLink, '_blank')} className="m-10 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:opacity-80 transform transition duration-500 hover:scale-105 hover:cursor-pointer">
+<div onClick={() => window.open(ProjectLink, '_blank')} className="z-100 m-10 left-0 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:opacity-80 transform transition duration-500 hover:scale-105 hover:cursor-pointer">
     
         <Image className="rounded-t-lg max-w-xs" 
                 src={ProjectImg} 

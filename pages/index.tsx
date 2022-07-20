@@ -5,8 +5,7 @@ import Projects from "../data/data";
 import Project from "../components/Project";
 import Container from "../components/Container";
 import Header from '../components/Header'
-;
-
+import Image from "next/image";
 export default function Home({}) {
   return (
     <Container displayFooter={true}>
@@ -21,10 +20,16 @@ export default function Home({}) {
 
     <div className="grid grid-cols-2 gap-5 static">
 
-    <div className="fixed max-w-prose col-start-1 items-stretch content-center justify-self-left">
-      <h1 className="text-2xl font-semi-bold">Holt.
-
-       </h1>
+    <div className="overflow-y-auto max-w-prose col-start-1 items-stretch content-center justify-self-left">
+      <h1 className="text-2xl font-semi-bold">
+        <Image 
+        className='self-center w-5 h-5 rounded-full mx-1'
+        src='/mac.png'
+        alt="profilepic"
+        width={20}
+        height={20}
+        layout="intrinsic"
+        /> Holt.</h1>
 
         <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
    </div>
