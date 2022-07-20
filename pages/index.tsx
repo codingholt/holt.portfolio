@@ -4,12 +4,12 @@ import styles from "../styles/Home.module.css";
 import Projects from "../data/data";
 import Project from "../components/Project";
 import Container from "../components/Container";
-
+import Header from '../components/Header'
 ;
 
 export default function Home({}) {
   return (
-    <Container>
+    <Container displayFooter={true}>
 
     <Head>
         <title>Holt</title>
@@ -21,13 +21,15 @@ export default function Home({}) {
 
     <div className="grid grid-cols-2 gap-5 static">
 
-    <div className="fixed max-w-prose col-start-1 items-stretch content-center justify-self-left">
-      <h1 className="text-2xl font-semi-bold ">Holt.</h1>
+    <div className="fixed max-w-prose col-start-1 items-stretch content-left justify-self-left">
+      <h1 className="text-2xl font-semi-bold">Holt.
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
+       </h1>
+
+        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
    </div>
     
-    <div className="col-start-2 items-stretch content-left justify-self-center">
+    <div className="col-start-2 block items-stretch content-center justify-self-end">
        {
        Projects.map((item, key) => 
         <Project
