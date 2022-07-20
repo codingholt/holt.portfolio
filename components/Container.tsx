@@ -1,7 +1,9 @@
 import CommandMenu from "./CommandMenu"
 import Footer from "./Footer"
 
-function Container({children } : {children: React.ReactNode}) {
+function Container({children, displayFooter} : {children: React.ReactNode, displayFooter: boolean}) {
+
+
 
     return(
         <>
@@ -10,7 +12,7 @@ function Container({children } : {children: React.ReactNode}) {
             {children}
        
         </div>
-        <Footer/>
+       {displayFooter ? <Footer/> : null}
         </>
     )
 }
