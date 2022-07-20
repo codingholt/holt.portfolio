@@ -21,7 +21,7 @@ export default function Home({}) {
 
     <div className="grid grid-cols-2 gap-5 static">
 
-    <div className="fixed max-w-prose col-start-1 items-stretch content-left justify-self-left">
+    <div className="fixed max-w-prose col-start-1 m-20 items-stretch content-left justify-self-left">
       <h1 className="text-2xl font-semi-bold">Holt.
 
        </h1>
@@ -29,7 +29,7 @@ export default function Home({}) {
         <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
    </div>
     
-    <div className="col-start-2 block items-stretch content-center justify-self-end">
+    <div className="col-start-2 block items-stretch justify-self-center">
        {
        Projects.map((item, key) => 
         <Project
