@@ -41,6 +41,9 @@ module.exports = {
         sans: ['Inter', ...fontFamily.sans],
         serif: ['Domine', ...fontFamily.serif],
       },
+      boxShadow: {
+        'lg': '0 8px 12px -3px rgb(0 0 0 / 0.2)'
+      },
       keyframes: {
         'slide-in': {
           '0%': { opacity: 0, transform: 'translateY(16px)' },

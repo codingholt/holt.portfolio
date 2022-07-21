@@ -10,9 +10,8 @@ function Container({children, displayFooter} : {children: React.ReactNode, displ
         <>
     <Header/>
 
-    <div className="z-10
+    <div className="
     backdrop-filter backdrop-blur-lg bg-opacity-5
-    my-2
     bg-slate-200 mx-40
     rounded-md shadow-2xl dark:shadow-gray-900
     ring-1 ring-black/10 dark:ring-gray-700/50">

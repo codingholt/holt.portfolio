@@ -20,9 +20,9 @@ export default function Home({}) {
 
     <div className="grid grid-cols-2 gap-5 static">
 
-    <div className="overflow-y-auto max-w-prose col-start-1 items-stretch content-center justify-self-left">
+    <div className="col-start-1 items-stretch content-center justify-self-left sticky">
       <h1 className="text-2xl font-semi-bold">
-        <Image 
+        <Image  
         className='self-center w-5 h-5 rounded-full mx-1'
         src='/mac.png'
         alt="profilepic"
@@ -31,8 +31,9 @@ export default function Home({}) {
         layout="intrinsic"
         /> Holt.</h1>
 
-        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
-   </div>
+        <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nesciunt quae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam! uae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam! uae fuga, exercitationem veritatis enim sit aperiam eligendi, obcaecati qui repellat! Eius, soluta. Iste amet fugit consectetur, voluptatum tempore aliquam!</p>
+        </div>
+
     
     <div className="col-start-2 block items-stretch justify-self-end">
        {
