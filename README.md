@@ -10,3 +10,4 @@
 - [ ] Make responsive
 - [ ] Write text about me.
 - [ ] add socials (with icons)
+- [ ] Mail modal
