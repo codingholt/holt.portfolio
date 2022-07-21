@@ -12,7 +12,7 @@
 
 
 function Header({}:{}){
-  const IconStyle = 'opacity-50 hover:opacity-100 mx-2 hover:cursor-pointer'
+  const IconStyle = 'opacity-50 hover:opacity-100 mx-2 hover:cursor-pointer transform transition duration-500 hover:scale-105'
 
 
     return (
