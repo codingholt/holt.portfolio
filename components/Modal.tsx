@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 
-export default function Modal({ modalTitle, modalDescription, modalOpen, closeModal}:{ modalTitle: string, modalDescription: string, modalOpen: any, closeModal: any}) {
+export default function Modal({ modalTitle, modalDescription, modalOpen, closeModal}:{ modalTitle: string, modalDescription: any, modalOpen: any, closeModal: any}) {
 
 
   return (
@@ -48,7 +48,7 @@ export default function Modal({ modalTitle, modalDescription, modalOpen, closeMo
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 mt-4 px-4 border border-gray-400 rounded shadow hover:cursor-pointer"
+                      className="inline-block bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow hover:cursor-pointer"
                       onClick={() => window.open('mailto:codingholt@gmx.com', '_blank')}
                     >
                       Open Email

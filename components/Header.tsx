@@ -43,7 +43,7 @@ function openModal() {
 
 
 </div>
-<Modal modalTitle='Email' modalDescription='You can email me at: codingholt@gmx.com or click the button below to go straight to your preffered email application.' modalOpen={isOpen} closeModal={closeModal}/>
+<Modal modalTitle='Email' modalDescription={<span>You can send an email to <code>codingholt@gmx.com</code> to get in touch with me, or click the button below to go straight to your preffered email application.</span>} modalOpen={isOpen} closeModal={closeModal}/>
 </>
     )
 }
