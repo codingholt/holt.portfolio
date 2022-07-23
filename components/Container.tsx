@@ -1,14 +1,13 @@
 import CommandMenu from "./CommandMenu"
 import Footer from "./Footer"
 import Header from "./Header"
-
+import Modal from "./Modal"
 function Container({children, displayFooter} : {children: React.ReactNode, displayFooter: boolean}) {
-
 
 
     return(
         <>
-    <Header/>
+<Header/>
 
     <div className="
     backdrop-filter backdrop-blur-lg bg-opacity-5
@@ -18,7 +17,7 @@ function Container({children, displayFooter} : {children: React.ReactNode, displ
 
     
         <div className="container mx-auto m-20 text-left p-20">
-        
+
             {children}
        
         </div>
